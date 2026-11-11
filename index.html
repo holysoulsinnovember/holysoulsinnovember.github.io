@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Prayers, practices and indulgences for the Holy Souls in Purgatory, in English, Latin, Hindi, Telugu and Kannada.">
+<title>Pray for the Holy Souls</title>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Devanagari:wght@400;600&family=Noto+Serif+Telugu:wght@400;600&family=Noto+Serif+Kannada:wght@400;600&display=swap">
+<style>
+/* Layout: a missal page — single narrow column, rubrics in red, versicles marked ℣ ℟, black-vestment dark theme */
+:root{
+  --bg:#f6f6f3; --paper:#ffffff; --ink:#1b1a1f; --muted:#5d5a63; --rule:#d9d6dc;
+  --rubric:#a3201b; --wax:#b8862e; --violet:#4a3a5c;
+  --display:"IM Fell DW Pica", "Iowan Old Style", Georgia, serif;
+  --body:"Cardo", "Iowan Old Style", Georgia, serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e0d10; --paper:#17161a; --ink:#e9e6ec; --muted:#a29ea8; --rule:#2e2b33;
+  --rubric:#e0574f; --wax:#e0b25a; --violet:#b9a6d1; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e0d10; --paper:#17161a; --ink:#e9e6ec; --muted:#a29ea8; --rule:#2e2b33;
+  --rubric:#e0574f; --wax:#e0b25a; --violet:#b9a6d1; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.1rem;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:40rem;margin:0 auto;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:3rem}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,9vw,3.6rem)}
+h2{font-size:1.9rem;display:flex;align-items:baseline;gap:.6rem}
+h2::before{content:"✠";color:var(--rubric);font-size:1.2rem}
+h3{font-size:1.3rem;color:var(--violet)}
+p{margin:0}
+.rubric{color:var(--rubric);font-style:italic;font-size:.95rem}
+.label{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rubric)}
+section{display:flex;flex-direction:column;gap:1.1rem}
+.hero{gap:1.4rem;padding-top:1rem}
+.flame{width:18px;height:46px;position:relative}
+.flame::before{content:"";position:absolute;left:5px;top:0;width:8px;height:16px;border-radius:50% 50% 45% 45%;
+  background:var(--wax);animation:flick 3s ease-in-out infinite;transform-origin:50% 100%}
+.flame::after{content:"";position:absolute;left:6px;top:18px;width:6px;height:28px;background:var(--rule);border-radius:1px}
+@keyframes flick{0%,100%{transform:scaleY(1) rotate(-1deg)}50%{transform:scaleY(1.12) rotate(2deg)}}
+@media (prefers-reduced-motion:reduce){.flame::before{animation:none}}
+.latin{font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--muted)}
+.notice{border-left:3px solid var(--rubric);padding:.6rem 0 .6rem 1rem}
+.prayer{background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:1.3rem 1.3rem 1rem;display:flex;flex-direction:column;gap:.7rem}
+.prayer .head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.v,.r{padding-left:1.6rem;text-indent:-1.6rem}
+.v::before{content:"℣. ";color:var(--rubric)}
+.r::before{content:"℟. ";color:var(--rubric)}
+.copy{font:inherit;font-size:.85rem;color:var(--rubric);background:none;border:1px solid var(--rule);border-radius:3px;padding:.2rem .7rem;cursor:pointer}
+.copy:hover{border-color:var(--rubric)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--rubric);outline-offset:2px}
+blockquote{margin:0;padding-left:1rem;border-left:1px solid var(--rule);font-style:italic}
+cite{display:block;font-style:normal;font-size:.9rem;color:var(--muted);margin-top:.3rem}
+ul.practices{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.1rem}
+ul.practices li{display:flex;flex-direction:column;gap:.2rem;padding-bottom:1.1rem;border-bottom:1px solid var(--rule)}
+ul.practices li:last-child{border-bottom:none;padding-bottom:0}
+form{display:flex;gap:.5rem;flex-wrap:wrap}
+input{flex:1 1 12rem;min-width:0;font:inherit;padding:.5rem .7rem;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:3px}
+.add{font:inherit;padding:.5rem 1rem;background:var(--rubric);color:var(--bg);border:none;border-radius:3px;cursor:pointer}
+#names{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+#names li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--rule)}
+#names li span::before{content:"✝ ";color:var(--wax)}
+.rm{font:inherit;font-size:.85rem;background:none;border:none;color:var(--muted);cursor:pointer}
+.empty{color:var(--muted);font-style:italic}
+.tabs{display:flex;gap:.4rem;flex-wrap:wrap}
+.tab{font:inherit;font-size:1rem;padding:.35rem .9rem;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:3px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--rubric);color:var(--bg);border-color:var(--rubric)}
+.lang{display:flex;flex-direction:column;gap:1rem}
+.lang .prayer p{line-height:1.9}
+.lang-hi{font-family:"Noto Serif Devanagari",var(--body)}
+.lang-te{font-family:"Noto Serif Telugu",var(--body)}
+.lang-kn{font-family:"Noto Serif Kannada",var(--body)}
+.lang h3{font-family:inherit;font-size:1.15rem;font-weight:600}
+.station{border-top:1px solid var(--rule);padding:.6rem 0}
+.station summary{cursor:pointer;font-family:var(--display);font-size:1.15rem;list-style-position:outside}
+.station .num{color:var(--rubric);display:inline-block;min-width:2.4rem}
+.station p{margin-top:.6rem}
+.stations{display:flex;flex-direction:column}
+footer{text-align:center;color:var(--muted);font-family:var(--display);font-style:italic;font-size:1.25rem;padding-top:1rem;border-top:1px solid var(--rule)}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="flame" aria-hidden="true"></div>
+    <p class="label">The Church Suffering</p>
+    <h1>Pray for the Holy Souls in Purgatory</h1>
+    <p class="latin">Requiem æternam dona eis, Domine, et lux perpetua luceat eis.</p>
+    <p>The souls in Purgatory can no longer merit for themselves. They depend on the charity of the faithful on earth: our Masses, prayers, alms and sacrifices. They do not forget those who remember them.</p>
+    <p class="notice" id="season">November is the month of the Holy Souls.</p>
+  </section>
+
+  <section>
+    <h2>Why we pray for the dead</h2>
+    <blockquote>It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.
+      <cite>2 Machabees 12:46, Douay-Rheims</cite></blockquote>
+    <p>The existence of Purgatory is a dogma of the Catholic Faith, defined by the Councils of Florence and Trent. Trent teaches that there is a Purgatory, and that the souls detained there are helped by the suffrages of the faithful, and above all by the acceptable Sacrifice of the Altar.</p>
+    <p>As the Catechism of St. Pius X explains, Purgatory is the temporary suffering of the loss of God, together with other pains, by which the soul is cleansed of every remnant of sin and made worthy to see God. Those who die in the state of grace but owing venial sins, or the temporal punishment due to sins already forgiven, are purified there before entering Heaven.</p>
+  </section>
+
+  <section>
+    <h2>Prayers</h2>
+
+    <div class="prayer" data-text="Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. May they rest in peace. Amen.">
+      <div class="head"><h3>Requiem æternam</h3><button class="copy" type="button">Copy</button></div>
+      <p class="v">Requiem æternam dona eis, Domine.</p>
+      <p class="r">Et lux perpetua luceat eis.</p>
+      <p class="v">Requiescant in pace.</p>
+      <p class="r">Amen.</p>
+      <p class="rubric">In English: Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. May they rest in peace. Amen.</p>
+    </div>
+
+    <div class="prayer" data-text="Out of the depths I have cried to thee, O Lord: Lord, hear my voice. Let thy ears be attentive to the voice of my supplication. If thou, O Lord, wilt mark iniquities: Lord, who shall stand it? For with thee there is merciful forgiveness: and by reason of thy law, I have waited for thee, O Lord. My soul hath relied on his word: my soul hath hoped in the Lord. From the morning watch even until night, let Israel hope in the Lord. Because with the Lord there is mercy: and with him plentiful redemption. And he shall redeem Israel from all his iniquities. Eternal rest grant unto them, O Lord, and let perpetual light shine upon them.">
+      <div class="head"><h3>De Profundis</h3><button class="copy" type="button">Copy</button></div>
+      <p class="rubric">Psalm 129, the psalm of the faithful departed.</p>
+      <p>Out of the depths I have cried to thee, O Lord: Lord, hear my voice.</p>
+      <p>Let thy ears be attentive to the voice of my supplication.</p>
+      <p>If thou, O Lord, wilt mark iniquities: Lord, who shall stand it?</p>
+      <p>For with thee there is merciful forgiveness: and by reason of thy law, I have waited for thee, O Lord.</p>
+      <p>My soul hath relied on his word: my soul hath hoped in the Lord.</p>
+      <p>From the morning watch even until night, let Israel hope in the Lord.</p>
+      <p>Because with the Lord there is mercy: and with him plentiful redemption.</p>
+      <p>And he shall redeem Israel from all his iniquities.</p>
+      <p class="v">Eternal rest grant unto them, O Lord.</p>
+      <p class="r">And let perpetual light shine upon them.</p>
+      <details>
+        <summary class="rubric" style="cursor:pointer">In Latin (Vulgate)</summary>
+        <div class="latin-text" style="display:flex;flex-direction:column;gap:.4rem;margin-top:.6rem;font-style:italic">
+          <p>De profundis clamavi ad te, Domine: Domine, exaudi vocem meam.</p>
+          <p>Fiant aures tuæ intendentes in vocem deprecationis meæ.</p>
+          <p>Si iniquitates observaveris, Domine: Domine, quis sustinebit?</p>
+          <p>Quia apud te propitiatio est: et propter legem tuam sustinui te, Domine.</p>
+          <p>Sustinuit anima mea in verbo ejus: speravit anima mea in Domino.</p>
+          <p>A custodia matutina usque ad noctem: speret Israël in Domino.</p>
+          <p>Quia apud Dominum misericordia: et copiosa apud eum redemptio.</p>
+          <p>Et ipse redimet Israël ex omnibus iniquitatibus ejus.</p>
+          <p class="v">Requiem æternam dona eis, Domine.</p>
+          <p class="r">Et lux perpetua luceat eis.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="prayer" data-text="O God, the Creator and Redeemer of all the faithful, grant to the souls of Thy servants departed the remission of all their sins, that through pious supplications they may obtain the pardon which they have always desired. Who livest and reignest world without end. Amen.">
+      <div class="head"><h3>Fidelium Deus</h3><button class="copy" type="button">Copy</button></div>
+      <p class="rubric">The Collect for all the faithful departed, from the Roman Missal.</p>
+      <p class="latin" style="font-size:1.1rem">Fidelium, Deus, omnium Conditor et Redemptor, animabus famulorum famularumque tuarum remissionem cunctorum tribue peccatorum: ut indulgentiam, quam semper optaverunt, piis supplicationibus consequantur. Qui vivis et regnas in sæcula sæculorum. Amen.</p>
+      <p>O God, the Creator and Redeemer of all the faithful, grant to the souls of Thy servants departed the remission of all their sins, that through pious supplications they may obtain the pardon which they have always desired. Who livest and reignest world without end. Amen.</p>
+    </div>
+
+    <div class="prayer" data-text="Eternal Father, I offer Thee the Most Precious Blood of Thy Divine Son, Jesus, in union with the Masses said throughout the world today, for all the holy souls in Purgatory, for sinners everywhere, for sinners in the universal Church, those in my own home and within my family. Amen.">
+      <div class="head"><h3>Offering of the Precious Blood</h3><button class="copy" type="button">Copy</button></div>
+      <p class="rubric">Traditionally associated with St. Gertrude the Great.</p>
+      <p>Eternal Father, I offer Thee the Most Precious Blood of Thy Divine Son, Jesus, in union with the Masses said throughout the world today, for all the holy souls in Purgatory, for sinners everywhere, for sinners in the universal Church, those in my own home and within my family. Amen.</p>
+    </div>
+    <div class="prayer way">
+      <div class="head"><h3>The Way of the Cross for the Holy Souls</h3></div>
+      <p class="rubric">First published by Frank Quin &amp; Company, Philadelphia, 1928. Make the Stations in a church, offering the indulgences for the souls in Purgatory.</p>
+      <p class="label">Act of Contrition</p>
+      <p>O my Jesus! I love You above all things. I hate and detest all my sins, because by them I have offended You. The holy indulgences, the fruits and merits of this devotion, I intend to gain for the souls in Purgatory, in particular for those who in life were near and dear to me, and also for those for whom I am, in a special way, obliged to pray.</p>
+      <p>O Mary, my merciful Mother and the Mother of the poor souls in Purgatory, accompany me, by your intercession, on this journey.</p>
+      <p class="rubric">At each Station:</p>
+      <p class="v">We adore Thee, O Christ, and we bless Thee.</p>
+      <p class="r">Because by Thy holy Cross Thou hast redeemed the world.</p>
+      <p class="rubric">Then the prayer of the Station, followed by: My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. Merciful Jesus, grant them eternal rest. Amen.</p>
+      <div class="stations">
+        <details class="station"><summary><span class="num">I</span> Jesus is Condemned to Death</summary><p>O my innocent Jesus, to free me from eternal death, You allowed Yourself to be condemned by a pagan judge to the death of the cross. Give me a hatred for sin and the grace to live that I may one day obtain from You a merciful sentence. The poor souls in Purgatory have already been judged. Through Your mercy they have escaped hell; yet on account of their sins, Your justice has caused them to suffer the pains of Purgatory. O most merciful Jesus, have pity on them. Revoke the sentence of their exile and open to them the gates of heaven.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">II</span> Jesus is Made to Bear His Cross</summary><p>O holy cross, You are the tree of life, the gate of heaven, our salvation, and our only hope. Be my salvation at the hour of death. O Jesus, be mindful of Your servants who have departed this life with this sign of faith. Free them by the victorious power of Your cross, by which You have conquered death. Lead them into eternal life and happiness.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">III</span> Jesus Falls the First Time</summary><p>O Jesus, through Your weakness under the cross and the merits of this first fall, grant me perseverance in my good resolutions, that I may always walk faithfully in Your holy ways. The souls in Purgatory now suffer because they neglected and abused Your graces in this life. They now realize that no sin-stained soul can see God. Therefore, have mercy on them, and cleanse them from all sin. Through the intercession of Your sorrowful Mother, deliver them from Purgatory.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">IV</span> Jesus Meets His Afflicted Mother</summary><p>O Heart of Mary! O Heart of Jesus! I offer my life for my sins. May the sweet names of Jesus and Mary be on my lips and in my heart at the hour of my death. O sweetest Heart of Jesus, I implore that I may love You more and more. Sweet Heart of Mary, be our salvation. Mother most sorrowful, merciful Queen of the Holy Souls, into your hands I place my few merits and implore you to unite them with the infinite merits of your Son. Offer them to the eternal Father for those souls who are bound to me by ties of relationship.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">V</span> Simon of Cyrene Helps Jesus to Carry His Cross</summary><p>O my Jesus, I accept the cross. I embrace it. Let me help You to carry Your cross, by being patient in all trials that may assail me. How many souls in Purgatory now regret their past impatience! But You, O Lord, be generous with them and remit all that still remains to be expiated.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">VI</span> Veronica Wipes the Face of Jesus</summary><p>O Lord, Jesus Christ, You who have left on Veronica’s veil the image of Your bloodstained countenance, grant that the memory of Your bitter passion and death may ever remain impressed on my soul. Have pity on the poor souls, made to Your image and likeness and redeemed by Your Most Precious Blood. Free them from all sin that they may enter heaven, to see You face to face forever and ever.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">VII</span> Jesus Falls the Second Time</summary><p>My sins have made Your cross heavy, O Jesus. I detest them and firmly propose to amend my life. Never permit me to separate myself from You again. Have mercy, O Jesus, on those souls who now suffer the pains of Purgatory for mortal sins committed in this life. O clement Heart of Jesus, have compassion on them.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">VIII</span> Jesus Comforts the Women of Jerusalem</summary><p>Most compassionate Heart of Jesus! My Jesus, who said to the holy women: “Do not weep for Me, but weep for yourselves and for your children,” make me weep for the ingratitude that I have returned for Your love. I wish to make amends in this life for my sins, that I may obtain pardon for them in the next. Grant me a tender love for the souls in Purgatory, especially for the souls of my relatives. For the future, I promise to do what I have neglected through my forgetfulness and hardness of heart.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">IX</span> Jesus Falls the Third Time</summary><p>Through this most painful fall, O Jesus, I ask You to deliver me from an unhappy death, which would plunge me into hell. From the power of the enemy deliver my immortal soul, and make me live and die in Your grace. Look with mercy upon the poor souls doing penance in Purgatory. With tears and prayers they seek Your help and mercy. Hear their prayers and lead them out of that place of purification into the blessed peace of heaven, there to enjoy forever the splendour of Your glory.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">X</span> Jesus is Stripped of His Garments</summary><p>My most blessed Redeemer, stripped of Your garments for love of me, grant me holy modesty and purity. Deliver me from all dangerous inclinations to created things. Make me die to everything of this world, that at death separation from all earthly things may be easy. Of what benefit now are wealth and the pleasures of this world to the souls in Purgatory? Their bodies they had to leave to decay and the dust of death, and their wealth to heirs. Only their works have followed them: the good to be rewarded, and the evil to be punished. O Lord, put an end to their suffering. Do not keep them any longer from the inheritance of the saints, but pardon them and admit them into the realm of eternal bliss and happiness.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">XI</span> Jesus is Nailed to the Cross</summary><p>My most innocent Jesus, nailed to the cross for my sins, I beseech You, through the merits of Your horrible suffering, to come to my aid in my last sickness and agony. Grant me the grace to receive in time Your most holy Sacraments. Come to me then, O Most Holy Viaticum, and pour into my soul the patience of Your Most Sacred Heart! And you, O Mary my Mother, console me in that hour and make sweet my sufferings, through the sorrow that pierced your heart at the crucifixion. Lamb of God, have mercy on the souls in Purgatory, whose sufferings are greater than those of the sick and dying. Spare them this agony, and through the merits of Your passion admit them into eternal dwellings.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">XII</span> Jesus Dies on the Cross</summary><p>O Jesus, through Your three hours’ agony on the cross, grant me a happy death. Take me when I am best prepared. In that hour, fill my soul with holy sentiments of faith, hope, and charity. Grant me true and perfect contrition for my sins and the grace to accept with Christian resignation my death, with all its pains and sufferings. May I leave this world invoking Your Most Holy Name. Mary, Mother of Sorrows, refuge of the dying, be near me in my last agony. Remember, O most loving Jesus, the poor souls with that love with which You gave comfort to the good thief: “This day thou shalt be with Me in Paradise.” Call these souls into the kingdom of Your glory, that they may praise You together with all the angels and saints forever and ever.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">XIII</span> Jesus is Taken Down from the Cross</summary><p>O Jesus, You whose soul descended to the dead to announce peace to the just of the Old Testament, descend now among the poor souls who yearn for You. Free them from the chains of their slavery, and grant them the liberty of true children of God! O Mary, my Mother, may I, like Jesus, be placed in your arms at my departure from this world. Be with me at the tribunal of the Divine Judge, that through your intercession I may obtain a favourable judgment. Sweet Heart of Mary, be my salvation!</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+        <details class="station"><summary><span class="num">XIV</span> Jesus is Laid in the Tomb</summary><p>O Jesus, through the merits of Your bitter passion and death, and through Your glorious Resurrection, I beseech You to have compassion on the poor souls, and grant them a happy and glorious admission into heaven. Let them enter into that peace so long desired. Let them contemplate the splendour of the Beatific Vision. Let them bless eternally Your mercy. Sweet Heart of Mary, be my salvation, that I may not be condemned to that place of agony, when my body will be in the cold earth. Let my soul flee the fires of Purgatory. Most loving Mother, on that day save your child. Bring me quick relief and through your merits deliver me from the flames, that I may thank you in heaven and, with you and all the saints, adore and love Jesus, your beloved Son, who with the Father and the Holy Ghost liveth and reigneth, true God, forever and ever. Amen.</p><p class="rubric">My Jesus, mercy! Our Father. Hail Mary. Eternal rest grant unto them, O Lord…</p></details>
+      </div>
+      <p class="label">Closing Prayer</p>
+      <p>My crucified Redeemer, I offer You this devotion, which by Your grace I have just finished. Grant that the precious fruits of Your death on the cross be not lost either for me or for the souls in Purgatory. Mary, Mother of Sorrows, place my petitions in the Heart of your beloved Son, so that I may be admitted into the kingdom of grace, there together with my dear ones, both living and dead, to be blessed eternally. O Gentlest Heart of Jesus, ever present in the Blessed Sacrament, ever consumed with burning love for the poor captive souls in Purgatory, have mercy on them. Be gentle in Your judgments, but let some drops of Your Precious Blood fall upon the devouring flames. O merciful Saviour, send Your angels to conduct the poor souls to a place of refreshment, light and peace. Amen.</p>
+      <p class="v">Eternal rest grant unto them, O Lord.</p>
+      <p class="r">And let perpetual light shine upon them.</p>
+      <p>Sacred Heart of Jesus, have mercy on them. Merciful Jesus, grant them eternal rest. Amen.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Prayers in Indian languages</h2>
+    <div class="tabs" role="tablist" aria-label="Language">
+      <button class="tab" role="tab" type="button" id="tab-hi" aria-controls="lang-hi" aria-selected="true">हिन्दी</button>
+      <button class="tab" role="tab" type="button" id="tab-te" aria-controls="lang-te" aria-selected="false">తెలుగు</button>
+      <button class="tab" role="tab" type="button" id="tab-kn" aria-controls="lang-kn" aria-selected="false">ಕನ್ನಡ</button>
+    </div>
+
+    <div class="lang lang-hi" id="lang-hi" role="tabpanel" aria-labelledby="tab-hi" lang="hi">
+      <div class="prayer" data-text="हे प्रभु, उन्हें अनन्त विश्राम प्रदान कर, और अनन्त ज्योति उन पर चमकती रहे। वे शान्ति में विश्राम करें। आमेन।">
+        <div class="head"><h3>अनन्त विश्राम</h3><button class="copy" type="button">Copy</button></div>
+        <p>हे प्रभु, उन्हें अनन्त विश्राम प्रदान कर, और अनन्त ज्योति उन पर चमकती रहे। वे शान्ति में विश्राम करें। आमेन।</p>
+      </div>
+      <div class="prayer" data-text="हे ईश्वर, सब विश्वासियों के सृष्टिकर्ता और उद्धारकर्ता, अपने दिवंगत सेवकों और सेविकाओं की आत्माओं को उनके सब पापों की क्षमा प्रदान कर, ताकि जिस क्षमा की उन्होंने सदा कामना की, वह उन्हें भक्तिपूर्ण प्रार्थनाओं द्वारा प्राप्त हो। तू जो युगानुयुग जीवित है और राज्य करता है। आमेन।">
+        <div class="head"><h3>फिदेलियुम देउस</h3><button class="copy" type="button">Copy</button></div>
+        <p>हे ईश्वर, सब विश्वासियों के सृष्टिकर्ता और उद्धारकर्ता, अपने दिवंगत सेवकों और सेविकाओं की आत्माओं को उनके सब पापों की क्षमा प्रदान कर, ताकि जिस क्षमा की उन्होंने सदा कामना की, वह उन्हें भक्तिपूर्ण प्रार्थनाओं द्वारा प्राप्त हो। तू जो युगानुयुग जीवित है और राज्य करता है। आमेन।</p>
+      </div>
+      <div class="prayer" data-text="हे अनन्त पिता, आज संसार भर में अर्पित किए जा रहे सब मिस्साओं के साथ एक होकर, मैं तेरे दिव्य पुत्र येसु का अति बहुमूल्य रक्त तुझे अर्पित करता हूँ, शोधक-स्थान की सब पवित्र आत्माओं के लिए, सर्वत्र पापियों के लिए, विश्वव्यापी कलीसिया के पापियों के लिए, और मेरे अपने घर और परिवार के लोगों के लिए। आमेन।">
+        <div class="head"><h3>बहुमूल्य रक्त का अर्पण</h3><button class="copy" type="button">Copy</button></div>
+        <p>हे अनन्त पिता, आज संसार भर में अर्पित किए जा रहे सब मिस्साओं के साथ एक होकर, मैं तेरे दिव्य पुत्र येसु का अति बहुमूल्य रक्त तुझे अर्पित करता हूँ, शोधक-स्थान की सब पवित्र आत्माओं के लिए, सर्वत्र पापियों के लिए, विश्वव्यापी कलीसिया के पापियों के लिए, और मेरे अपने घर और परिवार के लोगों के लिए। आमेन।</p>
+      </div>
+    </div>
+
+    <div class="lang lang-te" id="lang-te" role="tabpanel" aria-labelledby="tab-te" lang="te" hidden>
+      <div class="prayer" data-text="ఓ ప్రభువా, వారికి నిత్య విశ్రాంతిని ప్రసాదించుము, నిత్య వెలుగు వారిపై ప్రకాశించునుగాక. వారు శాంతితో విశ్రమించుదురుగాక. ఆమెన్.">
+        <div class="head"><h3>నిత్య విశ్రాంతి</h3><button class="copy" type="button">Copy</button></div>
+        <p>ఓ ప్రభువా, వారికి నిత్య విశ్రాంతిని ప్రసాదించుము, నిత్య వెలుగు వారిపై ప్రకాశించునుగాక. వారు శాంతితో విశ్రమించుదురుగాక. ఆమెన్.</p>
+      </div>
+      <div class="prayer" data-text="ఓ దేవా, విశ్వాసులందరి సృష్టికర్తా, రక్షకుడా, మరణించిన నీ దాసదాసీల ఆత్మలకు వారి సకల పాపముల క్షమాపణను దయచేయుము; వారు ఎల్లప్పుడూ కోరుకొనిన క్షమను భక్తిపూర్వక ప్రార్థనల ద్వారా పొందుదురుగాక. నీవు యుగయుగములు జీవించి పరిపాలించుచున్నావు. ఆమెన్.">
+        <div class="head"><h3>ఫిదేలియుం దేఉస్</h3><button class="copy" type="button">Copy</button></div>
+        <p>ఓ దేవా, విశ్వాసులందరి సృష్టికర్తా, రక్షకుడా, మరణించిన నీ దాసదాసీల ఆత్మలకు వారి సకల పాపముల క్షమాపణను దయచేయుము; వారు ఎల్లప్పుడూ కోరుకొనిన క్షమను భక్తిపూర్వక ప్రార్థనల ద్వారా పొందుదురుగాక. నీవు యుగయుగములు జీవించి పరిపాలించుచున్నావు. ఆమెన్.</p>
+      </div>
+      <div class="prayer" data-text="నిత్యుడవైన తండ్రీ, ఈ దినము ప్రపంచమంతటా అర్పించబడుచున్న దివ్యపూజలతో ఐక్యమై, నీ దివ్యకుమారుడైన యేసు యొక్క అమూల్యమైన రక్తమును ఉత్తరించు స్థలములోని పవిత్ర ఆత్మలన్నిటి కొరకు, అన్నిచోట్ల ఉన్న పాపుల కొరకు, విశ్వ శ్రీసభలోని పాపుల కొరకు, నా గృహములోను నా కుటుంబములోను ఉన్నవారి కొరకు నీకు అర్పించుచున్నాను. ఆమెన్.">
+        <div class="head"><h3>అమూల్య రక్త సమర్పణ</h3><button class="copy" type="button">Copy</button></div>
+        <p>నిత్యుడవైన తండ్రీ, ఈ దినము ప్రపంచమంతటా అర్పించబడుచున్న దివ్యపూజలతో ఐక్యమై, నీ దివ్యకుమారుడైన యేసు యొక్క అమూల్యమైన రక్తమును ఉత్తరించు స్థలములోని పవిత్ర ఆత్మలన్నిటి కొరకు, అన్నిచోట్ల ఉన్న పాపుల కొరకు, విశ్వ శ్రీసభలోని పాపుల కొరకు, నా గృహములోను నా కుటుంబములోను ఉన్నవారి కొరకు నీకు అర్పించుచున్నాను. ఆమెన్.</p>
+      </div>
+    </div>
+
+    <div class="lang lang-kn" id="lang-kn" role="tabpanel" aria-labelledby="tab-kn" lang="kn" hidden>
+      <div class="prayer" data-text="ಸ್ವಾಮೀ, ಅವರಿಗೆ ನಿತ್ಯ ವಿಶ್ರಾಂತಿಯನ್ನು ದಯಪಾಲಿಸಿರಿ, ನಿತ್ಯ ಬೆಳಕು ಅವರ ಮೇಲೆ ಪ್ರಕಾಶಿಸಲಿ. ಅವರು ಶಾಂತಿಯಲ್ಲಿ ವಿಶ್ರಮಿಸಲಿ. ಆಮೆನ್.">
+        <div class="head"><h3>ನಿತ್ಯ ವಿಶ್ರಾಂತಿ</h3><button class="copy" type="button">Copy</button></div>
+        <p>ಸ್ವಾಮೀ, ಅವರಿಗೆ ನಿತ್ಯ ವಿಶ್ರಾಂತಿಯನ್ನು ದಯಪಾಲಿಸಿರಿ, ನಿತ್ಯ ಬೆಳಕು ಅವರ ಮೇಲೆ ಪ್ರಕಾಶಿಸಲಿ. ಅವರು ಶಾಂತಿಯಲ್ಲಿ ವಿಶ್ರಮಿಸಲಿ. ಆಮೆನ್.</p>
+      </div>
+      <div class="prayer" data-text="ಓ ದೇವರೇ, ಸಕಲ ವಿಶ್ವಾಸಿಗಳ ಸೃಷ್ಟಿಕರ್ತರೂ ರಕ್ಷಕರೂ ಆದವರೇ, ಮೃತರಾದ ನಿಮ್ಮ ದಾಸದಾಸಿಯರ ಆತ್ಮಗಳಿಗೆ ಅವರ ಎಲ್ಲಾ ಪಾಪಗಳ ಕ್ಷಮೆಯನ್ನು ದಯಪಾಲಿಸಿರಿ; ಅವರು ಸದಾ ಬಯಸಿದ ಕ್ಷಮೆಯನ್ನು ಭಕ್ತಿಪೂರ್ವಕ ಪ್ರಾರ್ಥನೆಗಳ ಮೂಲಕ ಪಡೆಯಲಿ. ಯುಗಯುಗಾಂತರಕ್ಕೂ ಜೀವಿಸುತ್ತಾ ಆಳುವವರೇ. ಆಮೆನ್.">
+        <div class="head"><h3>ಫಿದೇಲಿಯುಮ್ ದೇಉಸ್</h3><button class="copy" type="button">Copy</button></div>
+        <p>ಓ ದೇವರೇ, ಸಕಲ ವಿಶ್ವಾಸಿಗಳ ಸೃಷ್ಟಿಕರ್ತರೂ ರಕ್ಷಕರೂ ಆದವರೇ, ಮೃತರಾದ ನಿಮ್ಮ ದಾಸದಾಸಿಯರ ಆತ್ಮಗಳಿಗೆ ಅವರ ಎಲ್ಲಾ ಪಾಪಗಳ ಕ್ಷಮೆಯನ್ನು ದಯಪಾಲಿಸಿರಿ; ಅವರು ಸದಾ ಬಯಸಿದ ಕ್ಷಮೆಯನ್ನು ಭಕ್ತಿಪೂರ್ವಕ ಪ್ರಾರ್ಥನೆಗಳ ಮೂಲಕ ಪಡೆಯಲಿ. ಯುಗಯುಗಾಂತರಕ್ಕೂ ಜೀವಿಸುತ್ತಾ ಆಳುವವರೇ. ಆಮೆನ್.</p>
+      </div>
+      <div class="prayer" data-text="ನಿತ್ಯ ತಂದೆಯೇ, ಇಂದು ಲೋಕದಾದ್ಯಂತ ಅರ್ಪಿಸಲಾಗುವ ಬಲಿಪೂಜೆಗಳೊಂದಿಗೆ ಐಕ್ಯವಾಗಿ, ನಿಮ್ಮ ದಿವ್ಯ ಪುತ್ರರಾದ ಯೇಸುವಿನ ಅಮೂಲ್ಯ ರಕ್ತವನ್ನು ಶುದ್ಧೀಕರಣ ಸ್ಥಳದಲ್ಲಿರುವ ಎಲ್ಲಾ ಪವಿತ್ರ ಆತ್ಮಗಳಿಗಾಗಿ, ಎಲ್ಲೆಡೆಯ ಪಾಪಿಗಳಿಗಾಗಿ, ವಿಶ್ವ ಧರ್ಮಸಭೆಯ ಪಾಪಿಗಳಿಗಾಗಿ, ನನ್ನ ಮನೆಯವರಿಗಾಗಿ ಮತ್ತು ಕುಟುಂಬದವರಿಗಾಗಿ ನಿಮಗೆ ಅರ್ಪಿಸುತ್ತೇನೆ. ಆಮೆನ್.">
+        <div class="head"><h3>ಅಮೂಲ್ಯ ರಕ್ತದ ಅರ್ಪಣೆ</h3><button class="copy" type="button">Copy</button></div>
+        <p>ನಿತ್ಯ ತಂದೆಯೇ, ಇಂದು ಲೋಕದಾದ್ಯಂತ ಅರ್ಪಿಸಲಾಗುವ ಬಲಿಪೂಜೆಗಳೊಂದಿಗೆ ಐಕ್ಯವಾಗಿ, ನಿಮ್ಮ ದಿವ್ಯ ಪುತ್ರರಾದ ಯೇಸುವಿನ ಅಮೂಲ್ಯ ರಕ್ತವನ್ನು ಶುದ್ಧೀಕರಣ ಸ್ಥಳದಲ್ಲಿರುವ ಎಲ್ಲಾ ಪವಿತ್ರ ಆತ್ಮಗಳಿಗಾಗಿ, ಎಲ್ಲೆಡೆಯ ಪಾಪಿಗಳಿಗಾಗಿ, ವಿಶ್ವ ಧರ್ಮಸಭೆಯ ಪಾಪಿಗಳಿಗಾಗಿ, ನನ್ನ ಮನೆಯವರಿಗಾಗಿ ಮತ್ತು ಕುಟುಂಬದವರಿಗಾಗಿ ನಿಮಗೆ ಅರ್ಪಿಸುತ್ತೇನೆ. ಆಮೆನ್.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ways to help them</h2>
+    <ul class="practices">
+      <li><h3>Have Holy Mass offered</h3><p>The Holy Sacrifice is the greatest suffrage. Request a Mass for a departed soul by name, especially on the anniversary of death.</p></li>
+      <li><h3>Gregorian Masses</h3><p>Thirty Masses offered on thirty consecutive days for one soul, a custom going back to Pope St. Gregory the Great.</p></li>
+      <li><h3>The three Masses of All Souls</h3><p>Pope Benedict XV, in 1915, granted every priest the privilege of offering three Masses on All Souls' Day: one for a particular intention, one for all the faithful departed, and one for the intention of the Sovereign Pontiff.</p></li>
+      <li><h3>The Office of the Dead</h3><p>Pray Vespers, Matins or Lauds of the Office of the Dead, the Church's own prayer for the departed, especially on All Souls' Day and on anniversaries.</p></li>
+      <li><h3>Visit the cemetery</h3><p>Pray at the graves of the faithful, particularly during the first days of November, and keep the graves of your family cared for.</p></li>
+      <li><h3>The Rosary for the dead</h3><p>Offer a decade or a full Rosary each day of November for the souls most forgotten.</p></li>
+      <li><h3>Alms and sacrifices</h3><p>Almsgiving, fasting and small mortifications may be offered for the departed.</p></li>
+      <li><h3>The Heroic Act of Charity</h3><p>Offer to God, through Our Lady, all the satisfactory value of your good works in life, and all suffrages offered for you after death, for the Holy Souls. Speak with your confessor before making it.</p></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>All Souls' indulgence</h2>
+    <p>By the traditional grant, the faithful who visit a church or public oratory on All Souls' Day may gain a plenary indulgence, applicable only to the souls in Purgatory, each time they make the visit.</p>
+    <p class="rubric">At each visit, pray six Our Fathers, six Hail Marys and six Glorias for the intentions of the Sovereign Pontiff. Go to Confession and receive Holy Communion within the usual time, with detachment from all sin.</p>
+  </section>
+
+  <section>
+    <h2>Request a Mass for the dead</h2>
+    <p>To have the Holy Sacrifice offered for a departed soul, write to us by email. Please include:</p>
+    <ul class="practices">
+      <li><p>The name of the departed soul, or "for all the Holy Souls" if you have no particular intention.</p></li>
+      <li><p>Whether you ask for a single Mass, or for Gregorian Masses on thirty consecutive days.</p></li>
+      <li><p>Any date you would like, such as the anniversary of death.</p></li>
+      <li><p>Your own name and how to reach you, so that we can confirm the Mass.</p></li>
+    </ul>
+    <div class="prayer" data-text="holysoulsnovembermonth@gmail.com">
+      <div class="head"><h3>Email address</h3><button class="copy" type="button">Copy</button></div>
+      <p style="word-break:break-all;font-size:1.2rem;user-select:all">holysoulsnovembermonth@gmail.com</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>My dead to remember</h2>
+    <p>Write the names of those you pray for. The list stays on your own device.</p>
+    <form id="addForm">
+      <label for="nameInput" class="label" style="flex-basis:100%">Name of the departed</label>
+      <input id="nameInput" type="text" placeholder="e.g. My grandmother, Maria" autocomplete="off">
+      <button class="add" type="submit">Add</button>
+    </form>
+    <ul id="names"></ul>
+    <p class="empty" id="emptyNote">No names yet. Add the first one above.</p>
+  </section>
+
+  <section>
+    <h2>Spread the devotion</h2>
+    <p>Send this page to your family, your parish groups and your friends, so that more prayers rise for the Holy Souls this November.</p>
+    <div class="prayer" id="shareBox" data-text="">
+      <div class="head"><h3>Link to this page</h3><button class="copy" type="button">Copy</button></div>
+      <p id="shareUrl" style="word-break:break-all"></p>
+    </div>
+  </section>
+
+  <footer>Requiescant in pace. Amen.</footer>
+</main>
+
+<script>
+(function(){
+  // Share link
+  var u=location.href.split('#')[0]; document.getElementById('shareUrl').textContent=u; document.getElementById('shareBox').dataset.text='Pray for the Holy Souls in Purgatory: '+u;
+
+  // Season notice
+  var d=new Date(), m=d.getMonth(), day=d.getDate(), s=document.getElementById('season');
+  if(m===10&&day===2) s.textContent="Today is All Souls' Day. Each visit to a church today may gain a plenary indulgence for the dead.";
+  else if(m===10&&day<=8) s.textContent="We are in the first week of November. Visit a cemetery and pray for the dead.";
+  else if(m===10) s.textContent="November is the month of the Holy Souls. Remember them every day.";
+  else s.textContent="Pray for the Holy Souls every day, and especially throughout November.";
+
+  // Copy buttons
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.closest('.prayer').dataset.text;
+      var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)};
+      try{navigator.clipboard.writeText(t).then(done,function(){b.textContent='Select text to copy'});}
+      catch(e){b.textContent='Select text to copy'}
+    });
+  });
+
+  // Language tabs
+  var tabs=document.querySelectorAll('.tab');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(o){
+        var on=o===t; o.setAttribute('aria-selected',on);
+        document.getElementById(o.getAttribute('aria-controls')).hidden=!on;
+      });
+    });
+  });
+
+  // Remembrance list
+  var KEY='holySoulsNames', list=[];
+  try{list=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){list=[]}
+  var ul=document.getElementById('names'), empty=document.getElementById('emptyNote');
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(list))}catch(e){}}
+  function render(){
+    ul.innerHTML='';
+    list.forEach(function(n,i){
+      var li=document.createElement('li'), sp=document.createElement('span'), rm=document.createElement('button');
+      sp.textContent=n; rm.className='rm'; rm.type='button'; rm.textContent='Remove';
+      rm.addEventListener('click',function(){list.splice(i,1);save();render()});
+      li.appendChild(sp); li.appendChild(rm); ul.appendChild(li);
+    });
+    empty.hidden=list.length>0;
+  }
+  document.getElementById('addForm').addEventListener('submit',function(e){
+    e.preventDefault(); var inp=document.getElementById('nameInput'), v=inp.value.trim();
+    if(!v) return; list.push(v); inp.value=''; save(); render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
