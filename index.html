@@ -102,6 +102,33 @@ footer{text-align:center;color:var(--muted);font-family:var(--display);font-styl
     <p>As the Catechism of St. Pius X explains, Purgatory is the temporary suffering of the loss of God, together with other pains, by which the soul is cleansed of every remnant of sin and made worthy to see God. Those who die in the state of grace but owing venial sins, or the temporal punishment due to sins already forgiven, are purified there before entering Heaven.</p>
   </section>
 
+  <section id="daily-reading">
+    <h2>Daily reading for November</h2>
+    <p>Read or listen through Fr F. X. Schouppe's <em>Purgatory, Explained by the Lives and Legends of the Saints</em> in thirty days, about ten pages a day, with Fr Kent's notes.</p>
+    <ul class="practices" id="days"></ul>
+  </section>
+<script>
+(function(){
+  // Add a day's number here once its page (readings/dayNN.html) and audio (audio/dayNN.mp3) are uploaded.
+  var READY=[7,8,9];
+  var plan=["Preface; Part I, ch. I–V","ch. VI–VIII","ch. IX–XI","ch. XII–XIV","ch. XV–XVII","ch. XVIII–XX","ch. XXI–XXIII","ch. XXIV–XXVI","ch. XXVII–XXX","ch. XXXI–XXXIV","ch. XXXV–XXXVIII","ch. XXXIX–XLI","Part II, ch. I–IV","II. V–VIII","II. IX–XI","II. XII–XIV","II. XV–XVIII","II. XIX–XXII","II. XXIII–XXVI","II. XXVII–XXX","II. XXXI–XXXIII","II. XXXIV–XXXVII","II. XXXVIII–XL","II. XLI–XLIII","II. XLIV–XLVII","II. XLVIII–LI","II. LII–LIV","II. LV–LVIII","II. LIX–LXII","II. LXIII–LXV; Notes"];
+  var ul=document.getElementById("days");
+  var waiting=[];
+  plan.forEach(function(ch,i){
+    var d=i+1, nn=(d<10?"0":"")+d;
+    if(READY.indexOf(d)<0){waiting.push(d);return;}
+    var li=document.createElement("li");
+    li.innerHTML='<a href="readings/day'+nn+'.html" style="color:inherit;text-decoration:none"><span class="label">'+d+' November</span><br><strong>Day '+d+'</strong>: '+ch+' <span style="color:var(--rubric)">· read &amp; listen →</span></a>';
+    ul.appendChild(li);
+  });
+  if(waiting.length){
+    var p=document.createElement("p"); p.className="empty";
+    p.textContent="Coming soon: Days "+waiting.join(", ")+".";
+    ul.parentNode.appendChild(p);
+  }
+})();
+</script>
+
   <section>
     <h2>Prayers</h2>
 
